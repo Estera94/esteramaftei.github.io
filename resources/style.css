@@ -50,8 +50,6 @@ html {
 	 outline: 0.02rem solid #453e4c;
  }
  
- 
- 
 /* CONTENT WITH IMAGE. */
  
  .container-content {
@@ -85,8 +83,6 @@ html {
  .text {
 	  color: white;
 	  width: 70%;
-	  padding: 8px 8px;
-	  background: rgb(230, 163, 163);
 	  font-size: 15px; 
 	  font-weight: 100; 
 	  letter-spacing: 0.5px;
@@ -114,8 +110,7 @@ html {
 		  color: rgb(194, 68, 68);
 		  font-weight: bold;
 	  }
-/*	  THREE BOXEX FLEXED */
-	  
+/*	  THREE BOXEX FLEXED */ 
 	  .container-flex {
 		  z-index: 2;
 		  display: flex;
@@ -123,16 +118,40 @@ html {
 	  }
 	  
 	   .col {
-		 width: 315px;
+		 width: 30%;
 		 margin-top: -140px;
+		 text-align: center;
+		 font-size: 16px;
 	  }
 	  
 	   .col img{
-		  height: 60%;
+		  height: 70%;
+		  width: 80%;
 	  }
+/*  FOOTER  */
+  footer {
+	  background: rgb(14, 6, 6);
+	  height: 100px;
+	  margin-bottom: 40px;
+	  display: flex;
+	  justify-content: space-around;
+	  align-items: center;
+	  font-size: 13px;
+	  color: #fff;
+	  font-weight: 600;
+  }
 
-  
+  .social-media a { 
+	color:#fff;
+	font-size: 25px;
+  }
+	.icon {
+		  margin-right: 50px;
+		  padding: 9px;
+	  }
 	  
-	  
-	  
+	.icon:hover {
+		color: rgb(230, 163, 163);
+		outline: 0.02rem solid #453e4c;
+	}
 	  
