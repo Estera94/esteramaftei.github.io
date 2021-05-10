@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	 font-size: 62.5%; 
+ }
+ 
+
+ body {
+ 	padding: 0;
+ 	font-family: 'Open Sans', sans-serif;
+ }
+ 
+ header .name-top {
+	 display: flex;
+	 justify-content: center;
+	 padding-top: 2rem;
+ }
+ 
+ .name-top  h1 {
+   font-family: 'Monsieur La Doulaise', cursive;
+   font-size: 4rem;
+ }
+ 
+ .navbar-sticky {
+	z-index: 100;
+	position: sticky;
+	top: 0;
+	background: red;
+ }
