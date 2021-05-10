@@ -25,7 +25,7 @@ html {
    font-size: 4rem;
  }
  
- header  .navbar-sticky {
+ header .navbar-sticky {
 	z-index: 100;
 	position: sticky;
 	top: 0;
@@ -55,18 +55,25 @@ html {
 /* CONTENT WITH IMAGE. */
  
  .container-content {
-	 margin-top: 40px;
+	 margin-top: 170px;
 	 display: flex;
 	 justify-content: space-between;
 	 background: rgb(8, 8, 8);
+	 z-index:10;
+	 position: relative;
  }
- 
- .container-content .content {
+ .wave-top  {
+	top: 176px;
+	z-index: 1;
+	position: absolute;
+
+}
+  .content {
 	 margin:auto;
 	 width: 30%;
  }
 
- .container-content .content .title {
+  .title {
 	 color: black;
 	 font-size: 23px;
 	 background: white;
@@ -75,8 +82,7 @@ html {
 	 padding: 8px 0;
  }
  
-  .container-content .content .text {
-
+ .text {
 	  color: white;
 	  width: 70%;
 	  padding: 8px 8px;
@@ -86,15 +92,13 @@ html {
 	  letter-spacing: 0.5px;
   }
  
-  .container-content .content .line {
+  .line {
   	 width: 80%;
   }
-  
-  .container-content .content .another {
+ /* .content .another {
 	  width:90%;
-  }
- 
-   .container-content .content button {
+  } */
+ .content button {
    	width: 20%;
    	background: transparent;
    	border: 0.2rem solid #fff;
@@ -103,27 +107,16 @@ html {
 	text-decoration: none;
 	color: #fff;
 	font-size: 12px;
+	margin-top: px;
    }
-   
-
- 
-/*   BUTTONE HOVER */
- 
-    .container-content .content button:hover {
-		  background:  #fff;
+/*   BUTTON HOVER */
+    .content button:hover {
+		  background:  #6fbbd3;
 		  font-weight: bold;;
 		  color: black;
 		  font-weight: bold;
 	  }
-
- 
 /*	  THREE BOXEX FLEXED */
-	  
-
-	  .waves div .bottom  {
-		  top: -150px;
-		  position: relative;
-	  }
 	  
 	  .container-flex {
 		  z-index: 2;
