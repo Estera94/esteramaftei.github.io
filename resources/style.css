@@ -55,11 +55,11 @@ html {
 /* CONTENT WITH IMAGE. */
  
  .container-content {
-	 background: black;
 	
 	 margin-top: 40px;
 	 display: flex;
 	 justify-content: space-between;
+	 background: rgb(8, 8, 8);
  }
  
  .container-content .content {
@@ -68,19 +68,21 @@ html {
  }
 
  .container-content .content .title {
+	 
 	 color: black;
 	 font-size: 23px;
-	 background: #fff;
+	 background: white;
 	 width: 60%;
 	 text-align: center;
 	 padding: 8px 0;
  }
  
   .container-content .content .text {
+
 	  color: white;
 	  width: 70%;
 	  padding: 8px 8px;
-	  background: #444;
+	  background: rgb(49, 48, 48);
 	  font-size: 15px; 
 	  font-weight: 100; 
 	  letter-spacing: 0.5px;
@@ -94,9 +96,27 @@ html {
 	  width:90%;
   }
  
+   .container-content .content button {
+   	width: 20%;
+   	background: transparent;
+   	border: 0.2rem solid #fff;
+   	padding: 12px 0;
+   	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+   }
+   
+
  
+/*   BUTTONE HOVER */
  
+    .container-content .content button:hover {
+		  background:  #fff;
+		  font-weight: bold;;
+		  color: black;
+		  font-weight: bold;
+	  }
+
  
- 
- 
- 
+/*	  THREE BOXEX FLEXED */
