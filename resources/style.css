@@ -55,7 +55,6 @@ html {
 /* CONTENT WITH IMAGE. */
  
  .container-content {
-	
 	 margin-top: 40px;
 	 display: flex;
 	 justify-content: space-between;
@@ -68,7 +67,6 @@ html {
  }
 
  .container-content .content .title {
-	 
 	 color: black;
 	 font-size: 23px;
 	 background: white;
@@ -120,3 +118,30 @@ html {
 
  
 /*	  THREE BOXEX FLEXED */
+	  
+
+	  .waves div .bottom  {
+		  top: -150px;
+		  position: relative;
+	  }
+	  
+	  .container-flex {
+		  z-index: 2;
+		  display: flex;
+		  justify-content: center;
+	  }
+	  
+	  .container-flex .col {
+		 width: 315px;
+		 margin-top: -140px;
+	  }
+	  
+	  .container-flex .col img{
+		  height: 60%;
+	  }
+
+  
+	  
+	  
+	  
+	  
