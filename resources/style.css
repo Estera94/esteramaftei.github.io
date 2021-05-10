@@ -56,24 +56,43 @@ html {
  
  .container-content {
 	 background: black;
-	 
+	
 	 margin-top: 40px;
 	 display: flex;
 	 justify-content: space-between;
  }
  
  .container-content .content {
-	 background:pink;
-	 color: red;
-	 margin: auto;
+	 margin:auto;
 	 width: 30%;
  }
 
+ .container-content .content .title {
+	 color: black;
+	 font-size: 23px;
+	 background: #fff;
+	 width: 60%;
+	 text-align: center;
+	 padding: 8px 0;
+ }
  
+  .container-content .content .text {
+	  color: white;
+	  width: 70%;
+	  padding: 8px 8px;
+	  background: #444;
+	  font-size: 15px; 
+	  font-weight: 100; 
+	  letter-spacing: 0.5px;
+  }
  
- 
- 
- 
+  .container-content .content .line {
+  	 width: 80%;
+  }
+  
+  .container-content .content .another {
+	  width:90%;
+  }
  
  
  
