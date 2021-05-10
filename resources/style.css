@@ -12,7 +12,9 @@ html {
  	font-family: 'Open Sans', sans-serif;
  }
  
- header .name-top {
+/*   NAVIGATION BAR   */
+ 
+ section .name-top {
 	 display: flex;
 	 justify-content: center;
 	 padding-top: 2rem;
@@ -23,9 +25,59 @@ html {
    font-size: 4rem;
  }
  
- .navbar-sticky {
+ header  .navbar-sticky {
 	z-index: 100;
 	position: sticky;
 	top: 0;
-	background: red;
+	display: flex;
+	justify-content: center;
+	background: #fff;
  }
+
+ .navbar-sticky a {
+ 	text-decoration: none;
+	padding: 2rem;
+	font-size: 1.5rem;
+	color: black;
+	font-weight: bold;
+
+ }
+ 
+/*    NAVIGATION BAR HOVER.  */
+ 
+ .navbar-sticky a:hover{
+	 color: #6fbbd3;
+	 outline: 0.02rem solid #453e4c;
+ }
+ 
+ 
+ 
+/* CONTENT WITH IMAGE. */
+ 
+ .container-content {
+	 background: black;
+	 
+	 margin-top: 40px;
+	 display: flex;
+	 justify-content: space-between;
+ }
+ 
+ .container-content .content {
+	 background:pink;
+	 color: red;
+	 margin: auto;
+	 width: 30%;
+ }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
