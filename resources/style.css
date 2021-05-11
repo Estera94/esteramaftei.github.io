@@ -12,7 +12,7 @@ html {
  }
 
 /*   NAVIGATION BAR   */
- section .name-top {
+  .name-top {
 	 display: flex;
 	 justify-content: center;
 	 padding-top: 2rem;
@@ -23,13 +23,16 @@ html {
    font-size: 4rem;
  }
 
- .navbar-sticky {
+ header {
 	z-index: 100;
 	position: sticky;
 	top: 0;
+ }
+  .navbar-sticky {
 	display: flex;
 	justify-content: center;
 	background: #fff;
+
  }
 
  .navbar-sticky a {
@@ -51,7 +54,7 @@ html {
 	 margin-top: 195px;
 	 display: flex;
 	 justify-content: space-between;
-	 background: rgb(8, 1, 1);
+	 background: rgb(3, 0, 0);
 	 z-index:10;
 	 position: relative;
  }
@@ -110,16 +113,19 @@ html {
 	  }
 /* ABOUT ME  */
 .container-about-me {
-	/* background: red; */
 	height: 300px;
 	width: 100%;
 	margin-top: -130px;
 	display: flex;
 	justify-content: space-around;
+
 }
 .my-picture {
+	border: 2px solid black;
 	width: 250px;
     height: 280px;
+	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
+
 }
 
  .my-picture img {
