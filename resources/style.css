@@ -32,7 +32,7 @@ html {
 	display: flex;
 	justify-content: center;
 	background: #fff;
-
+	box-shadow: 0 10px 16px -25px #777;
  }
 
  .navbar-sticky a {
@@ -118,23 +118,44 @@ html {
 	margin-top: -130px;
 	display: flex;
 	justify-content: space-around;
-
 }
-.my-picture {
-	border: 2px solid black;
+.about-me-text h2 {
+	color: #202c2d;
+}
+
+.about-me-text {
+	width: 40%;
+	font-size: 2rem;
+	text-align: justify;
+}
+.about-me-text p {
+	letter-spacing: .5px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.headshot {
 	width: 250px;
     height: 280px;
-	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
-
 }
 
- .my-picture img {
+ .headshot img {
+	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
+	border:1px solid #000000;
+	border-radius: 8px;
 	width: 100%;
 	height: 100%;
 }
 
 	  
 /*	 PORTFOLIO  */ 
+	  .portfolio-heading {
+		  width: 75%;
+		  margin: 80px auto 0 auto;
+		  color: #202c2d;
+		  font-size: 2rem;
+	  }
 	  .container-portfolio {
 		border: rgb(185, 177, 177) 1px solid;
 		box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
@@ -197,10 +218,9 @@ html {
 	  .arrow {
 		float: left;
 		margin-right: 15px;
-		  width: 0; 
-		  /* height: 0;  */
-		  border-top: 10px solid transparent;
-		  border-bottom: 10px solid transparent;
+		width: 0; 
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
 	  }
 	  
 	  .arrow-right {
