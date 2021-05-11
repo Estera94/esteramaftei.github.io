@@ -114,14 +114,19 @@ html {
 	  
 /*	 PORTFOLIO  */ 
 .container {
-	margin-top: -100px
+	margin-top: -100px;
+	margin-bottom: 50px;
 }
-
 	  .container-portfolio {
-		  display: flex;
-		  justify-content: space-around;
+		border: rgb(185, 177, 177) 1px solid;
+		  width: 80%;
+		  margin: 40px auto;
 	  }
-
+	  .portfolio-flex{
+		  margin-top: 40px;
+		  display: flex;
+		  justify-content: space-around; 
+	  }
 	   .col-img {
 		 margin-bottom: 50px;
 		 width: 380px;
