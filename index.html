@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset = "UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,17 +8,16 @@
 	<link rel = "stylesheet" type = "text/css" href = "./resources/style.css">
 	
 	<!-- FONT -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.c		ss">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link 		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;		0,800;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
 	
 	<!-- PAGE TITLE -->
-	<link rel = "icon" href="./resources/pictures/people_talking.png">
+	<link rel="icon" href="./resources/pictures/people_talking.png">
 	<title>Portfolio</title>
-	
-<head>
+</head>
 <body>
 	<!--   NAVIGATION GAR TOP AND THE SECOND ONE STICKY  -->
 	<section>
@@ -26,28 +25,27 @@
 			<h1>Estera Maftei</h1>
 		</div>
 	</section>
-	<header>
+	    <header>
 			<nav class="navbar-sticky">
 				<a href="#">HOME</a>
 				<a href="#about-me">ABOUT</a>
 				<a href="#portfolio">PORTFOLIO</a>
 				<a href="#">CV</a>
 			</nav>
-	<header>
-
+		</header>
 	<!-- BACKGROUND IMAGE WITH TEXT -->
 	<section>
 		<div>
 			<svg class="wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#080808" fill-opacity="1" d="M0,128L60,112C120,96,240,64,360,58.7C480,53,600,75,720,101.3C840,128,960,160,1080,144C1200,128,1320,64,1380,32L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 		</div>
 		<div class="container-content">	
-			<video width="50%" height="100%"  autoplay loop muted >
+			<video class="moon-video" autoplay loop muted >
 			 	<source src="./resources/pictures/cool.mp4" type="video/mp4">
 			</video>
 			<div class="content">
 				<p class="title">Welcome to Estera's portfolio</p>
 				<p class="text">I believe in creative freedom and the power of good code!</p>
-				<a href="about.me"><button>SEE MORE...</button></a>
+				<div class="button"><a class="see-more" href="#about-me">SEE MORE...</a></div>
 		   </div>
 		</div>
 		<div>
@@ -56,15 +54,18 @@
 	</section>
 
 	<!-- MAIN CONTAINER -->
-	<main class="container">
-
+	<section class="container">
 		<div class="container-about-me" id="about-me">
 			kejkfkef
 		</div>
-
 		<div class="container-portfolio" id="portfolio">
 			<div class="col-img">
-			 	<img width="380px" height="280px" src="./resources/pictures/funny_cat.jpeg">
+			 	<img src="./resources/pictures/funny_cat.jpeg" alt="funny cat">
+			</div>
+			<div class="arrow-holder">
+				<div class="arrow5 arrow arrow-left"></div>
+				<div class="arrow4 arrow arrow-left"></div>
+				<div class="arrow3 arrow arrow-left"></div>
 			</div>
 			<div class="col-text">
 			 	<p>Project description goes here with detail about the project and tech i used</p>
@@ -75,19 +76,23 @@
 			 	<p>Project description goes here with detail about the project and tech i used</p>
 			</div>
 			<div class="col-img">
-			 	<img width="380px" src="./resources/pictures/cv.jpg">
+			 	<img src="./resources/pictures/cv.jpg" alt="cv image">
 			</div>
 		</div>
 		<div class="container-portfolio">
 			<div class="col-img">
-			 	<img width="380px" height="280px" src="./resources/pictures/relax.jpg">
+			 	<img src="./resources/pictures/relax.jpg" alt="city night light and mountain image">
+			</div>
+			<div class="arrow-holder">
+				<div class="arrow5 arrow arrow-left"></div>
+				<div class="arrow4 arrow arrow-left"></div>
+				<div class="arrow3 arrow arrow-left"></div>
 			</div>
 			<div class="col-text">
 			 	<p>Project description goes here with detail about the project and tech i used</p>
 			</div>
 		</div>
-	</main>
-
+	</section>
 	<!--  FOOTER   -->
 	<footer>
 		<div class="copywriting">

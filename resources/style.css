@@ -5,21 +5,19 @@
 html {
 	 font-size: 62.5%; 
  }
- 
 
  body {
  	padding: 0;
  	font-family: 'Open Sans', sans-serif;
  }
- 
+
 /*   NAVIGATION BAR   */
- 
  section .name-top {
 	 display: flex;
 	 justify-content: center;
 	 padding-top: 2rem;
  }
- 
+
  .name-top  h1 {
    font-family: 'Monsieur La Doulaise', cursive;
    font-size: 4rem;
@@ -40,31 +38,32 @@ html {
 	font-size: 1.5rem;
 	color: black;
 	font-weight: bold;
-
  }
- 
+
 /*    NAVIGATION BAR HOVER.  */
- 
  .navbar-sticky a:hover{
 	 color: rgb(230, 163, 163);
 	 outline: 0.02rem solid #453e4c;
  }
- 
+
 /* CONTENT WITH IMAGE. */
- 
  .container-content {
-	 margin-top: 170px;
+	 margin-top: 195px;
 	 display: flex;
 	 justify-content: space-between;
 	 background: rgb(8, 1, 1);
 	 z-index:10;
 	 position: relative;
  }
+ .moon-video {
+	 width: 50%;
+	 height: 100%;
+ }
+
  .wave-top  {
 	top: 176px;
 	z-index: 1;
 	position: absolute;
-
 }
   .content {
 	 margin:auto;
@@ -81,30 +80,34 @@ html {
 	  font-weight: 100; 
 	  letter-spacing: 0.5px;
   }
-  
+
   .line {
   	 width: 80%;
   }
 
-  button {
+.button {
+	position: relative;
+	margin-top: 50px;
+}
+  .see-more {
    	width: 20%;
    	background: transparent;
    	border: 0.2rem solid #fff;
-   	padding: 12px 0;
-   	cursor: pointer;
-	text-decoration: none;
+	text-decoration: none; 
 	color: rgb(247, 241, 241);
+   	padding: 12px 15px;
+   	cursor: pointer;
 	font-size: 12px;
-	margin-top: 8px;
 	font-weight: bold;
    }
+
 /*   BUTTON HOVER */
-    button:hover {
+    .see-more:hover {
 		  background:  rgb(255, 255, 255);
 		  color: rgb(194, 68, 68);
 		  font-weight: bold;
 	  }
-
+/* ABOUT ME  */
 
 
 
@@ -113,21 +116,26 @@ html {
 .container {
 	margin-top: -100px
 }
+
 	  .container-portfolio {
 		  display: flex;
 		  justify-content: space-around;
-		  align-items: center;
 	  }
-	  
+
 	   .col-img {
 		 margin-bottom: 50px;
+		 width: 380px;
+		 height: 280px;
+	  }
+
+	 .col-img img {
+		  width: 100%;
+		  height: 100%;
 	  }
 
 	  .col-text {
 		  font-size: 18px;
-	  }
-
-	 
+	  }	 
 /*  FOOTER  */
   footer {
 	  background: rgb(14, 6, 6);
@@ -140,11 +148,11 @@ html {
 	  color: #fff;
 	  font-weight: 600;
   }
-
   .social-media a { 
 	color:#fff;
 	font-size: 25px;
   }
+
 	.icon {
 		  margin-right: 50px;
 		  padding: 9px;
@@ -155,3 +163,56 @@ html {
 		outline: 0.02rem solid #453e4c;
 	}
 	  
+
+
+	/*  AAAAAARRROOOWWW    */
+
+
+
+.arrow-holder {
+	position: absolute;
+	margin-top: 100px;
+	width: 220px;
+  }
+  
+  .arrow {
+	float: left;
+	margin-right: 15px;
+	  width: 0; 
+	  height: 0; 
+	  border-top: 10px solid transparent;
+	  border-bottom: 10px solid transparent;
+  }
+  
+  .arrow-right {
+	  border-left: 15px solid black;
+  }
+  
+  .arrow-left {
+	  border-right: 15px solid black;
+  }
+  
+  @-webkit-keyframes flash {
+	0%   { opacity: 1; }
+	100% { opacity: 0; }
+  }
+  
+  .arrow1 {
+	-webkit-animation: flash 2.5s infinite;
+  }
+  
+  .arrow2 {
+	-webkit-animation: flash 2.5s infinite .5s;
+  }
+  
+  .arrow3 {
+	-webkit-animation: flash 2.5s infinite 1s;
+  }
+  
+  .arrow4 {
+	-webkit-animation: flash 2.5s infinite 1.5s;
+  }
+  
+  .arrow5 {
+	-webkit-animation: flash 2.5s infinite 2s;
+  }
