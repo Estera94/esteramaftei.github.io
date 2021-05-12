@@ -18,6 +18,13 @@ html {
    font-family: 'Monsieur La Doulaise', cursive;
    font-size: 4rem;
  }
+ .hamburger-button div {
+	    display: none;
+		width: 35px;
+		height: 5px;
+		background-color: black;
+		margin: 6px 0;
+ }
  header {
 	z-index: 100;
 	position: sticky;
@@ -334,6 +341,18 @@ Extra large ≥1200px (desktop monitors) */
 	}
 }
 @media only screen and (max-width: 750px) {
+	.navbar-sticky {
+		display: none;
+	}
+	 .hamburger-button {
+		 background-color: #fff;
+		 padding: 10px;
+		 border-bottom: 1px solid rgb(161, 159, 159);
+	 }
+	 .hamburger-button div {
+		 display: block;
+		 background-color: rgb(110, 105, 106);
+	 }
 	.container-about-me {
 		margin-top: 90px;
 		width: 80%;
@@ -366,34 +385,49 @@ Extra large ≥1200px (desktop monitors) */
 	}
 	.portfolio-flex {
 		display: block;
+		margin: 0;
 	}
 	.col-img {
 		width: 100%;
 	 }
 	 .left-link {
-		 position: relative;
-		 bottom: 47rem;
 		 justify-content: flex-end;
 		 margin-right: 80px;
 	 }
-
 	 .media-text p {
 		margin-top: 90px;
+		position: relative;
+		margin-bottom:-60px;
+		text-align: center;
 	 }
 	 .col-text {
-		max-width: 45%;
+		max-width: 100%;
 		margin-top: -50px;
+		position: relative;
+		margin-top: -70px;
+		text-align: center;
+	}
+	.portfolio-links {
+		bottom: 0px;
+		padding: 4px;
+		justify-content: center;
+		right: 0;
 	}
 	footer {
-		font-size: 1.2rem;
-	}
-	.email {
 		font-size: 1.2rem;
 	}
 	.social-media a { 
 		font-size: 2rem;
 	  }	
 	  .icon {
-		margin-right: 10px;
+		margin-right: 4px;
 	 }
+}
+
+
+@media only screen and (max-width: 430px)  {
+	.wave-top  {
+		top: 280px;
+		position: absolute;
+	}
 }
