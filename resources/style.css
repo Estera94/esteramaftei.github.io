@@ -414,16 +414,22 @@ Extra large ≥1200px (desktop monitors) */
 
 	 .media-text p {
 		margin-top: 90px;
+		background: pink;
 	 }
 	 .col-text {
-		max-width: 50%;
-		margin-top: -70px;
+		max-width: 45%;
+		margin-top: -50px;
 	}
 	footer {
 		font-size: 1.2rem;
-		background: pink;
 	}
 	.email {
 		font-size: 1.2rem;
-	}	
+	}
+	.social-media a { 
+		font-size: 2rem;
+	  }	
+	  .icon {
+		margin-right: 10px;
+	 }
 }
