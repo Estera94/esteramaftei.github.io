@@ -16,12 +16,10 @@ html {
 	 justify-content: center;
 	 padding-top: 2rem;
  }
-
  .name-top  h1 {
    font-family: 'Monsieur La Doulaise', cursive;
    font-size: 4rem;
  }
-
  header {
 	z-index: 100;
 	position: sticky;
@@ -33,7 +31,6 @@ html {
 	background: #fff;
 	box-shadow: 0 10px 16px -25px #777;
  }
-
  .navbar-sticky a {
  	text-decoration: none;
 	padding: 2rem;
@@ -41,13 +38,11 @@ html {
 	color: black;
 	font-weight: bold;
  }
-
 /*    NAVIGATION BAR HOVER.  */
  .navbar-sticky a:hover{
 	 color: rgb(230, 163, 163);
 	 outline: 0.02rem solid #453e4c;
  }
-
 /* BACKGROUND VIDEO WIHE TEXT. */
  .container-content {
 	 margin-top: 195px;
@@ -61,36 +56,30 @@ html {
 	 width: 50%;
 	 height: 100%;
  }
-
  .wave-top  {
 	top: 176px;
 	z-index: 1;
 	position: absolute;
 }
-
 .wave-bottom {
 	position: absolute;
 }
   .content {
 	 margin: auto;
  }
-
   .title {
 	 color: white;
 	 font-size: 3.5rem;
  }
- 
  .text {
 	  color: white;
 	  font-size: 2.0rem; 
 	  font-weight: 100; 
 	  letter-spacing: 0.5px;
   }
-
   .line {
   	 width: 80%;
   }
-
 .button {
 	position: relative;
 	margin-top: 50px;
@@ -105,7 +94,6 @@ html {
 	font-weight: bold;
 	border-radius: 8px;
    }
-
 /*   BUTTON HOVER */
     .see-more:hover {
 		  background:  rgb(255, 255, 255);
@@ -122,11 +110,9 @@ html {
 	display: flex; 
 	justify-content: space-around;
 }
-
 .about-me-text h2 {
 	color: #202c2d;
 }
-
 .about-me-text {
 	right: 120px;
 	position: relative;
@@ -140,12 +126,10 @@ html {
 	word-wrap: break-word;
 	hyphens: auto;
 }
-
 .headshot {
 	width: 250px;
     height: 280px;
 }
-
  .headshot img {
 	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
 	border:1px solid #000000;
@@ -179,13 +163,11 @@ html {
 		 width: 380px;
 		 height: 280px;
 	  }
-
 	 .col-img img {
 		  width: 100%;
 		  height: 100%;
 		  border-radius: 8px;
 	  }
-
 	  .col-text {
 		  font-size: 1.8rem;
 		  max-width: 40%;
@@ -221,7 +203,6 @@ html {
 		margin-left: 120px;
 		width: 220px;
 	  }
-	  
 	  .arrow {
 		float: left;
 		margin-right: 15px;
@@ -229,36 +210,28 @@ html {
 		border-top: 10px solid transparent;
 		border-bottom: 10px solid transparent;
 	  }
-	  
 	  .arrow-right {
 		  border-left: 15px solid black;
 	  }
-	  
 	  .arrow-left {
 		  border-right: 15px solid black;
 	  }
-	  
 	  @-webkit-keyframes flash {
 		0%   { opacity: 1; }
 		100% { opacity: 0; }
 	  }
-	  
 	  .arrow1 {
 		-webkit-animation: flash 2.5s infinite;
-	  }
-	  
+	  } 
 	  .arrow2 {
 		-webkit-animation: flash 2.5s infinite .5s;
 	  }
-	  
 	  .arrow3 {
 		-webkit-animation: flash 2.5s infinite 1s;
-	  }
-	  
+	  } 
 	  .arrow4 {
 		-webkit-animation: flash 2.5s infinite 1.5s;
 	  }
-	  
 	  .arrow5 {
 		-webkit-animation: flash 2.5s infinite 2s;
 	  }
@@ -287,12 +260,10 @@ html {
 	color:#fff;
 	font-size: 2.5rem;
   }
-
 .icon {
 	  margin-right: 50px;
 	  padding: 9px;
    }
-	  
 .icon:hover {
 	color: rgb(230, 163, 163);
 	outline: 0.02rem solid #453e4c;
@@ -311,7 +282,6 @@ Extra large ≥1200px (desktop monitors) */
 	.about-me-text {
 		font-size: 1.8rem;
 	}
-
 	.headshot {
 		width: 200px;
 		height: 240px;
@@ -325,9 +295,6 @@ Extra large ≥1200px (desktop monitors) */
 	.name-top  h1 {
 		font-size: 2rem;
 	  }
-	.wave-top  {
-		top: 15%;
-	}
 	.title {
 		color: white;
 		font-size: 3rem;
