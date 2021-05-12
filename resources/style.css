@@ -1,11 +1,9 @@
 * {
 	box-sizing: border-box;
 }
-
 html {
 	 font-size: 62.5%; 
  }
-
  body {
  	padding: 0;
  	font-family: 'Open Sans', sans-serif;
@@ -127,8 +125,10 @@ html {
 	hyphens: auto;
 }
 .headshot {
-	width: 250px;
-    height: 280px;
+	/* width: 250px; */
+	width: 230px;
+    /* height: 280px; */
+    height: 300px;
 }
  .headshot img {
 	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
@@ -335,7 +335,6 @@ Extra large ≥1200px (desktop monitors) */
 		position: absolute;
 	}
 }
-
 @media only screen and (max-width: 750px) {
 	.container-about-me {
 		margin-top: 90px;
