@@ -125,9 +125,7 @@ html {
 	hyphens: auto;
 }
 .headshot {
-	/* width: 250px; */
 	width: 230px;
-    /* height: 280px; */
     height: 300px;
 }
  .headshot img {
