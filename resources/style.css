@@ -271,25 +271,34 @@ html {
 	  height: 100px;
 	  margin-bottom: 40px;
 	  display: flex;
-	  justify-content: space-around;
+	  justify-content: space-around; 
 	  align-items: center;
 	  font-size: 13px;
 	  color: #fff;
 	  font-weight: 600;
   }
-  .social-media a { 
+  .email {
+	  font-size: 1.4rem;
+	  cursor: pointer;
+  }
+  .email:hover {
+	color: rgb(230, 163, 163);
+	outline: 0.02rem solid #453e4c;
+	
+  }
+ .social-media a { 
 	color:#fff;
 	font-size: 25px;
   }
 
-	.icon {
-		  margin-right: 50px;
-		  padding: 9px;
-	  }
+.icon {
+	  margin-right: 50px;
+	  padding: 9px;
+   }
 	  
-	.icon:hover {
-		color: rgb(230, 163, 163);
-		outline: 0.02rem solid #453e4c;
-	}
+.icon:hover {
+	color: rgb(230, 163, 163);
+	outline: 0.02rem solid #453e4c;
+}
 	  
 
