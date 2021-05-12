@@ -331,7 +331,8 @@ Extra large ≥1200px (desktop monitors) */
 }
 @media only screen and (max-width: 800px)  {
 	.wave-top  {
-		top: 23%;
+		top: 230px;
+		position: absolute;
 	}
 }
 
