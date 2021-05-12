@@ -48,7 +48,7 @@ html {
 	 color: rgb(230, 163, 163);
 	 outline: 0.02rem solid #453e4c;
  }
-/* BACKGROUND VIDEO WIHE TEXT. */
+/* BACKGROUND VIDEO WITH TEXT. */
  .container-content {
 	 margin-top: 195px;
 	 display: flex;
@@ -100,10 +100,10 @@ html {
 	border-radius: 8px;
    }
 /*   BUTTON HOVER */
-    .see-more:hover {
-		  background:  rgb(255, 255, 255);
-		  color: rgb(194, 68, 68);
-		  font-weight: bold;
+.see-more:hover {
+	background:  rgb(255, 255, 255);
+	color: rgb(194, 68, 68);
+	font-weight: bold;
 	  }
 /* ABOUT ME  */
 .container-about-me {
@@ -114,12 +114,15 @@ html {
 .content-about-me {
 	display: flex; 
 	justify-content: space-around;
+	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
+	border:1px solid #000000;
+	border-radius: 8px;
 }
 .about-me-text h2 {
 	color: #202c2d;
 }
 .about-me-text {
-	right: 120px;
+	right: 110px; 
 	position: relative;
 	width: 40%;
 	font-size: 2rem;
@@ -182,7 +185,6 @@ html {
 		  justify-content: flex-end;
 		  position: relative;
 		  bottom: 30px;
-		  right:30px;
 	  }
 	  .left-link {
 		left:50px;
@@ -240,7 +242,18 @@ html {
 	  .arrow5 {
 		-webkit-animation: flash 2.5s infinite 2s;
 	  }
-/*  FOOTER  */
+	
+   section .container {
+	   max-width: 1300px;
+   	   margin: 0 auto;
+	   font-size: 2rem;
+	   padding: 4rem;
+   }
+   .email {
+	   display: flex;
+	   flex-wrap: wrap;
+	   justify-content: space-between;
+   }	  
   footer {
 	  background: rgb(14, 6, 6);
 	  height: 100px;
@@ -251,15 +264,6 @@ html {
 	  font-size: 1.3rem;
 	  color: #fff;
 	  font-weight: 600;
-  }
-  .email {
-	  font-size: 1.4rem;
-	  cursor: pointer;
-  }
-  .email:hover {
-	color: rgb(230, 163, 163);
-	outline: 0.02rem solid #453e4c;
-	
   }
  .social-media a { 
 	color:#fff;
@@ -286,6 +290,7 @@ Extra large ≥1200px (desktop monitors) */
 	}
 	.about-me-text {
 		font-size: 1.8rem;
+		right:50px;
 	}
 	.headshot {
 		width: 200px;
@@ -297,6 +302,9 @@ Extra large ≥1200px (desktop monitors) */
 }
 
 @media only screen and (max-width: 992px) {
+	.container-about-me {
+		width: 720px;
+	}
 	.name-top  h1 {
 		font-size: 2rem;
 	  }
@@ -318,6 +326,7 @@ Extra large ≥1200px (desktop monitors) */
 	}
 	.about-me-text {
 		font-size: 1.8rem;
+		right: 100px;
 	}
 	.portfolio-heading {
 		width: 680px;
@@ -333,6 +342,7 @@ Extra large ≥1200px (desktop monitors) */
 		border-top: 5px solid transparent;
 		border-bottom: 5px solid transparent;
 	}
+	
 }
 @media only screen and (max-width: 800px)  {
 	.wave-top  {
@@ -423,8 +433,6 @@ Extra large ≥1200px (desktop monitors) */
 		margin-right: 4px;
 	 }
 }
-
-
 @media only screen and (max-width: 430px)  {
 	.wave-top  {
 		top: 280px;
