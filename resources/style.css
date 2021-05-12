@@ -116,7 +116,8 @@ html {
 /* ABOUT ME  */
 .container-about-me {
 	width: 1200px;
-	margin: 230px auto 0 auto;
+	margin: 200px auto 0 auto;
+	padding-top: 40px;
 }
 .content-about-me {
 	display: flex; 
@@ -159,7 +160,8 @@ html {
 /*	 PORTFOLIO  */ 
 	  .portfolio-heading {
 		  width:  1200px;
-		  margin: 160px auto 0 auto;
+		  padding-top: 30px;
+		  margin: 110px auto 0 auto;
 		  color: #202c2d;
 		  font-size: 2rem;
 	  }
