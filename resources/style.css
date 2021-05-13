@@ -223,24 +223,24 @@ html {
 	  .arrow-left {
 		  border-right: 15px solid black;
 	  }
-	  @-webkit-keyframes flash {
+	  @keyframes flash {
 		0%   { opacity: 1; }
 		100% { opacity: 0; }
 	  }
 	  .arrow1 {
-		-webkit-animation: flash 2.5s infinite;
+		animation: flash 2.5s infinite;
 	  } 
 	  .arrow2 {
-		-webkit-animation: flash 2.5s infinite .5s;
+		animation: flash 2.5s infinite .5s;
 	  }
 	  .arrow3 {
-		-webkit-animation: flash 2.5s infinite 1s;
+		animation: flash 2.5s infinite 1s;
 	  } 
 	  .arrow4 {
-		-webkit-animation: flash 2.5s infinite 1.5s;
+		animation: flash 2.5s infinite 1.5s;
 	  }
 	  .arrow5 {
-		-webkit-animation: flash 2.5s infinite 2s;
+		animation: flash 2.5s infinite 2s;
 	  }
 	
    section .container {
@@ -296,7 +296,8 @@ Extra large ≥1200px (desktop monitors) */
 		width: 200px;
 		height: 240px;
 	}
-	.container-portfolio, .portfolio-heading {
+	.container-portfolio,
+	.portfolio-heading {
 		width: 900px;
 	}
 }
@@ -376,9 +377,9 @@ Extra large ≥1200px (desktop monitors) */
 	    border-radius: 8px;
 	}
 	.about-me-text {
-	right: 0;
-	width: 95%;
-	font-size: 1.6rem;
+		right: 0;
+		width: 95%;
+		font-size: 1.6rem;
 	}
 	.headshot {
 		width: 150px;
