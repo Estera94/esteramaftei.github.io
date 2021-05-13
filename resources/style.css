@@ -161,7 +161,7 @@ header {
 }
 
 .headshot img {
-	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
+	box-shadow: 13px 9px 15px -1px #3f3e3e52;
 	border: 1px solid #030303;
 	border-radius: 8px;
 	width: 100%;
@@ -180,7 +180,7 @@ header {
 
 .container-portfolio {
 	border: #b9b9b1 1px solid;
-	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
+	box-shadow: 13px 9px 15px -1px #3f3e3e52;
 	border-radius: 8px;
 	width: 1200px;
 	margin: 40px auto;
