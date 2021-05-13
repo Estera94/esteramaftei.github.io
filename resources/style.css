@@ -27,7 +27,7 @@ body {
 	display: none;
 	width: 35px;
 	height: 5px;
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	margin: 6px 0;
 }
 
