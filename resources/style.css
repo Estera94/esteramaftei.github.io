@@ -18,6 +18,13 @@ html {
    font-family: 'Monsieur La Doulaise', cursive;
    font-size: 4rem;
  }
+ .hamburger-button div {
+	display: none;
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+ }
  header {
 	z-index: 100;
 	position: sticky;
@@ -41,7 +48,7 @@ html {
 	 color: rgb(230, 163, 163);
 	 outline: 0.02rem solid #453e4c;
  }
-/* BACKGROUND VIDEO WIHE TEXT. */
+/* BACKGROUND VIDEO WITH TEXT. */
  .container-content {
 	 margin-top: 195px;
 	 display: flex;
@@ -93,10 +100,10 @@ html {
 	border-radius: 8px;
    }
 /*   BUTTON HOVER */
-    .see-more:hover {
-		  background:  rgb(255, 255, 255);
-		  color: rgb(194, 68, 68);
-		  font-weight: bold;
+.see-more:hover {
+	background:  rgb(255, 255, 255);
+	color: rgb(194, 68, 68);
+	font-weight: bold;
 	  }
 /* ABOUT ME  */
 .container-about-me {
@@ -107,12 +114,15 @@ html {
 .content-about-me {
 	display: flex; 
 	justify-content: space-around;
+	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
+	border:1px solid #000000;
+	border-radius: 8px;
 }
 .about-me-text h2 {
 	color: #202c2d;
 }
 .about-me-text {
-	right: 120px;
+	right: 110px; 
 	position: relative;
 	width: 40%;
 	font-size: 2rem;
@@ -175,7 +185,6 @@ html {
 		  justify-content: flex-end;
 		  position: relative;
 		  bottom: 30px;
-		  right:30px;
 	  }
 	  .left-link {
 		left:50px;
@@ -214,26 +223,37 @@ html {
 	  .arrow-left {
 		  border-right: 15px solid black;
 	  }
-	  @-webkit-keyframes flash {
+	  @keyframes flash {
 		0%   { opacity: 1; }
 		100% { opacity: 0; }
 	  }
 	  .arrow1 {
-		-webkit-animation: flash 2.5s infinite;
+		animation: flash 2.5s infinite;
 	  } 
 	  .arrow2 {
-		-webkit-animation: flash 2.5s infinite .5s;
+		animation: flash 2.5s infinite .5s;
 	  }
 	  .arrow3 {
-		-webkit-animation: flash 2.5s infinite 1s;
+		animation: flash 2.5s infinite 1s;
 	  } 
 	  .arrow4 {
-		-webkit-animation: flash 2.5s infinite 1.5s;
+		animation: flash 2.5s infinite 1.5s;
 	  }
 	  .arrow5 {
-		-webkit-animation: flash 2.5s infinite 2s;
+		animation: flash 2.5s infinite 2s;
 	  }
-/*  FOOTER  */
+	
+   section .container {
+	   max-width: 1300px;
+   	   margin: 0 auto;
+	   font-size: 2rem;
+	   padding: 4rem;
+   }
+   .email {
+	   display: flex;
+	   flex-wrap: wrap;
+	   justify-content: space-between;
+   }	  
   footer {
 	  background: rgb(14, 6, 6);
 	  height: 100px;
@@ -244,15 +264,6 @@ html {
 	  font-size: 1.3rem;
 	  color: #fff;
 	  font-weight: 600;
-  }
-  .email {
-	  font-size: 1.4rem;
-	  cursor: pointer;
-  }
-  .email:hover {
-	color: rgb(230, 163, 163);
-	outline: 0.02rem solid #453e4c;
-	
   }
  .social-media a { 
 	color:#fff;
@@ -279,17 +290,22 @@ Extra large ≥1200px (desktop monitors) */
 	}
 	.about-me-text {
 		font-size: 1.8rem;
+		right:50px;
 	}
 	.headshot {
 		width: 200px;
 		height: 240px;
 	}
-	.container-portfolio, .portfolio-heading {
+	.container-portfolio,
+	.portfolio-heading {
 		width: 900px;
 	}
 }
 
 @media only screen and (max-width: 992px) {
+	.container-about-me {
+		width: 720px;
+	}
 	.name-top  h1 {
 		font-size: 2rem;
 	  }
@@ -311,6 +327,7 @@ Extra large ≥1200px (desktop monitors) */
 	}
 	.about-me-text {
 		font-size: 1.8rem;
+		right: 100px;
 	}
 	.portfolio-heading {
 		width: 680px;
@@ -326,6 +343,7 @@ Extra large ≥1200px (desktop monitors) */
 		border-top: 5px solid transparent;
 		border-bottom: 5px solid transparent;
 	}
+	
 }
 @media only screen and (max-width: 800px)  {
 	.wave-top  {
@@ -334,6 +352,18 @@ Extra large ≥1200px (desktop monitors) */
 	}
 }
 @media only screen and (max-width: 750px) {
+	.navbar-sticky {
+		display: none;
+	}
+	 .hamburger-button {
+		 background-color: #fff;
+		 padding: 10px;
+		 border-bottom: 1px solid rgb(161, 159, 159);
+	 }
+	 .hamburger-button div {
+		 display: block;
+		 background-color: rgb(110, 105, 106);
+	 }
 	.container-about-me {
 		margin-top: 90px;
 		width: 80%;
@@ -347,9 +377,9 @@ Extra large ≥1200px (desktop monitors) */
 	    border-radius: 8px;
 	}
 	.about-me-text {
-	right: 0;
-	width: 95%;
-	font-size: 1.6rem;
+		right: 0;
+		width: 95%;
+		font-size: 1.6rem;
 	}
 	.headshot {
 		width: 150px;
@@ -366,34 +396,47 @@ Extra large ≥1200px (desktop monitors) */
 	}
 	.portfolio-flex {
 		display: block;
+		margin: 0;
 	}
 	.col-img {
 		width: 100%;
 	 }
 	 .left-link {
-		 position: relative;
-		 bottom: 47rem;
 		 justify-content: flex-end;
 		 margin-right: 80px;
 	 }
-
 	 .media-text p {
 		margin-top: 90px;
+		position: relative;
+		margin-bottom:-60px;
+		text-align: center;
 	 }
 	 .col-text {
-		max-width: 45%;
+		max-width: 100%;
 		margin-top: -50px;
+		position: relative;
+		margin-top: -70px;
+		text-align: center;
+	}
+	.portfolio-links {
+		bottom: 0px;
+		padding: 4px;
+		justify-content: center;
+		right: 0;
 	}
 	footer {
-		font-size: 1.2rem;
-	}
-	.email {
 		font-size: 1.2rem;
 	}
 	.social-media a { 
 		font-size: 2rem;
 	  }	
 	  .icon {
-		margin-right: 10px;
+		margin-right: 4px;
 	 }
+}
+@media only screen and (max-width: 430px)  {
+	.wave-top  {
+		top: 280px;
+		position: absolute;
+	}
 }
