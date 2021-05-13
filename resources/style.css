@@ -19,11 +19,11 @@ html {
    font-size: 4rem;
  }
  .hamburger-button div {
-	    display: none;
-		width: 35px;
-		height: 5px;
-		background-color: black;
-		margin: 6px 0;
+	display: none;
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
  }
  header {
 	z-index: 100;
