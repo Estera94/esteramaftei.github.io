@@ -132,7 +132,7 @@ header {
 	display: flex; 
 	justify-content: space-around;
 	box-shadow: 13px 9px 15px -1px #3f3e3e52;
-	border:1px solid #000000;
+	border: 1px solid #000000;
 	border-radius: 8px;
 }
 
@@ -171,7 +171,7 @@ header {
 }
 
 .portfolio-heading {
-	width:  1200px;
+	width: 1200px;
 	padding-top: 30px;
 	margin: 110px auto 0 auto;
 	color: #202c2d;
@@ -209,20 +209,20 @@ header {
 }	
 
 .portfolio-links {
-	display:flex;
+	display: flex;
 	justify-content: flex-end;
 	position: relative;
 	bottom: 30px;
 }
 
 .left-link {
-	left:50px;
+	left: 50px;
 	justify-content: flex-start;
 }
 
 .git { 
 	text-decoration: none;
-	margin-right:30px;
+	margin-right: 30px;
 	font-size: 2rem;
 	color: #000000;
 }
@@ -310,7 +310,7 @@ footer {
 }
 
 .social-media a { 
-	color:#fff;
+	color: #fff;
 	font-size: 2.5rem;
 }
 
@@ -339,8 +339,9 @@ Extra large ≥1200px (desktop monitors) */
 
 	.about-me-text {
 		font-size: 1.8rem;
-		right:50px;
+		right: 50px;
 	}
+	
 	.headshot {
 		width: 200px;
 		height: 240px;
@@ -350,6 +351,7 @@ Extra large ≥1200px (desktop monitors) */
 	.portfolio-heading {
 		width: 900px;
 	}
+	
 }
 
 @media only screen and (max-width: 992px) {
@@ -443,8 +445,8 @@ Extra large ≥1200px (desktop monitors) */
 		flex-direction: column;
 		align-items: center;
 		box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
-	    border: 1px solid #000000;
-	    border-radius: 8px;
+		border: 1px solid #000000;
+		border-radius: 8px;
 	}
 
 	.about-me-text {
