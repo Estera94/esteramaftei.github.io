@@ -1,0 +1,532 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; 
+}
+
+body {
+ 	padding: 0;
+ 	font-family: 'Open Sans', sans-serif;
+}
+
+.name-top {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.name-top  h1 {
+   font-family: 'Monsieur La Doulaise', cursive;
+   font-size: 4rem;
+}
+
+.hamburger-button div {
+	display: none;
+	width: 35px;
+	height: 5px;
+	background-color: #000000;
+	margin: 6px 0;
+}
+
+header {
+	z-index: 100;
+	position: sticky;
+	top: 0;
+}
+
+.navbar-sticky {
+	display: flex;
+	justify-content: center;
+	background: #fff;
+	box-shadow: 0 10px 16px -25px #777;
+}
+
+.navbar-sticky a {
+ 	text-decoration: none;
+	padding: 20px;
+	font-size: 1.5rem;
+	color: #030303;
+	font-weight: bold;
+}
+
+.navbar-sticky a:hover {
+	color: #e6a3a3;
+	outline: 0.2px solid #453e4c;
+}
+
+.container-content {
+	margin-top: 195px;
+	display: flex;
+	justify-content: space-between;
+	background: #030000;
+	z-index: 10;
+	position: relative;
+}
+
+.moon-video {
+	width: 50%;
+	height: 100%;
+}
+
+.wave-top {
+	top: 176px;
+	z-index: 1;
+	position: absolute;
+}
+
+.wave-bottom {
+	position: absolute;
+}
+
+.content {
+	margin: auto;
+ }
+
+.title {
+	color: #ffffff;
+	font-size: 3.5rem;
+}
+
+.text {
+	color: #ffffff;
+	font-size: 2.0rem; 
+	font-weight: 100; 
+	letter-spacing: 0.5px;
+}
+
+.line {
+  	width: 80%;
+}
+
+.button {
+	position: relative;
+	margin-top: 50px;
+}
+
+.see-more {
+   	border: 2px solid #fff;
+	text-decoration: none; 
+	color: #f7f1f1;
+   	padding: 12px 15px;
+   	cursor: pointer;
+	font-size: 1.2rem;
+	font-weight: bold;
+	border-radius: 8px;
+}
+
+.see-more:hover {
+	background: #ffffff;
+	color: #c24444;
+	font-weight: bold;
+}
+
+.container-about-me {
+	width: 1200px;
+	margin: 200px auto 0 auto;
+	padding-top: 40px;
+}
+
+.content-about-me {
+	display: flex; 
+	justify-content: space-around;
+	box-shadow: 13px 9px 15px -1px #3f3e3e52;
+	border: 1px solid #000000;
+	border-radius: 8px;
+}
+
+.about-me-text h2 {
+	color: #202c2d;
+}
+
+.about-me-text {
+	right: 110px; 
+	position: relative;
+	width: 40%;
+	font-size: 2rem;
+	text-align: justify;
+}
+
+.about-me-text p {
+	letter-spacing: .5px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.headshot {
+	width: 230px;
+    height: 300px;
+}
+
+.headshot img {
+	box-shadow: 13px 9px 15px -1px #3f3e3e52;
+	border: 1px solid #030303;
+	border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-top: 80px;
+}
+
+.portfolio-heading {
+	width: 1200px;
+	padding-top: 30px;
+	margin: 110px auto 0 auto;
+	color: #202c2d;
+	font-size: 2rem;
+}
+
+.container-portfolio {
+	border: #b9b9b1 1px solid;
+	box-shadow: 13px 9px 15px -1px #3f3e3e52;
+	border-radius: 8px;
+	width: 1200px;
+	margin: 40px auto;
+}
+
+.portfolio-flex {
+	margin: 40px 40px 15px 40px;
+	display: flex;
+	justify-content: space-around; 
+}
+
+.col-img {
+	width: 380px;
+	height: 280px;
+}
+
+.col-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+
+.col-text {
+	font-size: 1.8rem;
+	max-width: 40%;
+}	
+
+.portfolio-links {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	bottom: 30px;
+}
+
+.left-link {
+	left: 50px;
+	justify-content: flex-start;
+}
+
+.git { 
+	text-decoration: none;
+	margin-right: 30px;
+	font-size: 2rem;
+	color: #000000;
+}
+
+.git span {
+	font-size: 1.5rem;
+	padding-right: 8px;
+}
+
+.git:hover {
+	color: #c24444;
+}
+
+.arrow-holder {
+	position: relative;
+	margin-top: 120px;
+	margin-left: 120px;
+	width: 220px;
+}
+
+.arrow {
+	float: left;
+	margin-right: 15px;
+	width: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+.arrow-right {
+	border-left: 15px solid #000000;
+}
+
+.arrow-left {
+	border-right: 15px solid #000000;
+}
+
+@keyframes flash {
+	0%   { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+.arrow1 {
+	animation: flash 2.5s infinite;
+} 
+
+.arrow2 {
+	animation: flash 2.5s infinite .5s;
+}
+
+.arrow3 {
+	animation: flash 2.5s infinite 1s;
+} 
+
+.arrow4 {
+	animation: flash 2.5s infinite 1.5s;
+}
+
+.arrow5 {
+	animation: flash 2.5s infinite 2s;
+}
+	
+section .container {
+	max-width: 1300px;
+   	margin: 0 auto;
+	font-size: 2rem;
+	padding: 40px;
+}
+
+.email {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}	  
+
+footer {
+	background: #0e0606;
+	height: 100px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+	font-size: 1.3rem;
+	color: #fff;
+	font-weight: 600;
+}
+
+.social-media a { 
+	color: #fff;
+	font-size: 2.5rem;
+}
+
+.icon {
+	margin-right: 50px;
+	padding: 9px;
+}
+
+.icon:hover {
+	color: #e6a3a3;
+	outline: 0.2px solid #453e4c;
+}
+
+/* 
+Extra small <576px (small phones)
+Small ≥576px (phones)
+Medium ≥768px (tablets)
+Large ≥992px (laptops)
+Extra large ≥1200px (desktop monitors) */
+
+@media only screen and (max-width: 1250px)  {
+
+	.container-about-me {
+		width: 800px;
+	}
+
+	.about-me-text {
+		font-size: 1.8rem;
+		right: 50px;
+	}
+	
+	.headshot {
+		width: 200px;
+		height: 240px;
+	}
+
+	.container-portfolio,
+	.portfolio-heading {
+		width: 900px;
+	}
+	
+}
+
+@media only screen and (max-width: 992px) {
+
+	.container-about-me {
+		width: 720px;
+	}
+
+	.name-top  h1 {
+		font-size: 2rem;
+	  }
+
+	.title {
+		color: #ffffff;
+		font-size: 3rem;
+	}
+
+	.text {
+		font-size: 1.5rem; 
+	 }
+
+	.see-more {
+		padding: 9px 11px;
+		cursor: pointer;
+	 	font-size: 1rem;
+		border-radius: 5px;
+	}
+
+	.content-about-me {
+		justify-content: center;
+	}
+
+	.about-me-text {
+		font-size: 1.8rem;
+		right: 100px;
+	}
+
+	.portfolio-heading {
+		width: 680px;
+	}
+
+	.container-portfolio {
+		width: 720px;
+	}
+
+	.arrow-holder {
+		margin-top: 90px;
+		margin-left: 60px;
+	}
+
+	.arrow {
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+	}
+	
+}
+
+@media only screen and (max-width: 800px)  {
+
+	.wave-top  {
+		top: 230px;
+		position: absolute;
+	}
+	
+}
+
+@media only screen and (max-width: 750px) {
+
+	.navbar-sticky {
+		display: none;
+	}
+
+	.hamburger-button {
+		background-color: #fff;
+		padding: 10px;
+		border-bottom: 1px solid #a19f9f;
+	}
+
+	.hamburger-button div {
+		display: block;
+		background-color: #6e696a;
+	}
+
+	.container-about-me {
+		margin-top: 90px;
+		width: 80%;
+	}
+
+	.content-about-me {
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
+		box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
+		border: 1px solid #000000;
+		border-radius: 8px;
+	}
+
+	.about-me-text {
+		right: 0;
+		width: 95%;
+		font-size: 1.6rem;
+	}
+
+	.headshot {
+		width: 150px;
+		height: 160px;
+	}
+
+	.arrow {
+		display: none;
+	}
+
+	.portfolio-heading {
+		width: 70%;
+	}
+
+	.container-portfolio {
+		width: 85%;
+	}
+
+	.portfolio-flex {
+		display: block;
+		margin: 0;
+	}
+
+	.col-img {
+		width: 100%;
+	}
+	 
+	 .left-link {
+		 justify-content: flex-end;
+		 margin-right: 80px;
+	}
+
+	.media-text p {
+		margin-top: 90px;
+		position: relative;
+		margin-bottom: -60px;
+		text-align: center;
+	}
+
+	.col-text {
+		max-width: 100%;
+		margin-top: -50px;
+		position: relative;
+		margin-top: -70px;
+		text-align: center;
+	}
+
+	.portfolio-links {
+		bottom: 0px;
+		padding: 4px;
+		justify-content: center;
+		right: 0;
+	}
+
+	footer {
+		font-size: 1.2rem;
+	}
+
+	.social-media a { 
+		font-size: 2rem;
+	}
+
+	.icon {
+		margin-right: 4px;
+	}
+
+}
+
+@media only screen and (max-width: 430px)  {
+
+	.wave-top  {
+		top: 280px;
+		position: absolute;
+	}
+
+}
