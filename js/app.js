@@ -1,4 +1,3 @@
-
 const links = document.querySelectorAll('.navbar-nav a');
 const sections = document.querySelectorAll('section');
 
