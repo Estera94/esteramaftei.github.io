@@ -3,12 +3,12 @@
 }
 
 html {
-	font-size: 62.5%; 
+	font-size: 62.5%;
 }
 
 body {
- 	padding: 0;
- 	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .name-top {
@@ -18,8 +18,8 @@ body {
 }
 
 .name-top  h1 {
-   font-family: 'Monsieur La Doulaise', cursive;
-   font-size: 4rem;
+	font-family: 'Monsieur La Doulaise', cursive;
+	font-size: 4rem;
 }
 
 .hamburger-button div {
@@ -41,18 +41,25 @@ header {
 	justify-content: center;
 	background: #fff;
 	box-shadow: 0 10px 16px -25px #777;
+	padding: 5px;
 }
 
-.navbar-sticky a {
- 	text-decoration: none;
+.navbar-nav a {
+	text-decoration: none;
 	padding: 20px;
+	margin: 5px;
 	font-size: 1.5rem;
 	color: #030303;
 	font-weight: bold;
 }
 
-.navbar-sticky a:hover {
-	color: #e6a3a3;
+.navbar-nav a:hover {
+	color: #c24444;
+	outline: 0.2px solid #453e4c;
+}
+
+.navbar-nav a.active {
+	color: #c24444;
 	outline: 0.2px solid #453e4c;
 }
 
@@ -82,7 +89,7 @@ header {
 
 .content {
 	margin: auto;
- }
+}
 
 .title {
 	color: #ffffff;
@@ -91,13 +98,13 @@ header {
 
 .text {
 	color: #ffffff;
-	font-size: 2.0rem; 
-	font-weight: 100; 
+	font-size: 2.0rem;
+	font-weight: 100;
 	letter-spacing: 0.5px;
 }
 
 .line {
-  	width: 80%;
+	width: 80%;
 }
 
 .button {
@@ -106,11 +113,11 @@ header {
 }
 
 .see-more {
-   	border: 2px solid #fff;
-	text-decoration: none; 
+	border: 2px solid #fff;
+	text-decoration: none;
 	color: #f7f1f1;
-   	padding: 12px 15px;
-   	cursor: pointer;
+	padding: 12px 15px;
+	cursor: pointer;
 	font-size: 1.2rem;
 	font-weight: bold;
 	border-radius: 8px;
@@ -122,14 +129,18 @@ header {
 	font-weight: bold;
 }
 
+#about-me {
+	padding-top: 20px;
+}
+
 .container-about-me {
 	width: 1200px;
 	margin: 200px auto 0 auto;
-	padding-top: 40px;
+	padding-top: 80px;
 }
 
 .content-about-me {
-	display: flex; 
+	display: flex;
 	justify-content: space-around;
 	box-shadow: 13px 9px 15px -1px #3f3e3e52;
 	border: 1px solid #000000;
@@ -141,7 +152,7 @@ header {
 }
 
 .about-me-text {
-	right: 110px; 
+	right: 110px;
 	position: relative;
 	width: 40%;
 	font-size: 2rem;
@@ -157,7 +168,7 @@ header {
 
 .headshot {
 	width: 230px;
-    height: 300px;
+	height: 300px;
 }
 
 .headshot img {
@@ -170,9 +181,13 @@ header {
 	margin-top: 80px;
 }
 
+#portfolio {
+	padding-top: 20px;
+}
+
 .portfolio-heading {
 	width: 1200px;
-	padding-top: 30px;
+	padding-top: 50px;
 	margin: 110px auto 0 auto;
 	color: #202c2d;
 	font-size: 2rem;
@@ -189,12 +204,17 @@ header {
 .portfolio-flex {
 	margin: 40px 40px 15px 40px;
 	display: flex;
-	justify-content: space-around; 
+	justify-content: space-around;
 }
 
 .col-img {
 	width: 380px;
 	height: 280px;
+	transition: 0.25s;
+}
+
+.col-img:hover {
+	transform: scale(1.1);
 }
 
 .col-img img {
@@ -206,7 +226,7 @@ header {
 .col-text {
 	font-size: 1.8rem;
 	max-width: 40%;
-}	
+}
 
 .portfolio-links {
 	display: flex;
@@ -220,7 +240,7 @@ header {
 	justify-content: flex-start;
 }
 
-.git { 
+.git {
 	text-decoration: none;
 	margin-right: 30px;
 	font-size: 2rem;
@@ -246,7 +266,7 @@ header {
 .arrow {
 	float: left;
 	margin-right: 15px;
-	width: 0; 
+	width: 0;
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
 }
@@ -266,7 +286,7 @@ header {
 
 .arrow1 {
 	animation: flash 2.5s infinite;
-} 
+}
 
 .arrow2 {
 	animation: flash 2.5s infinite .5s;
@@ -274,7 +294,7 @@ header {
 
 .arrow3 {
 	animation: flash 2.5s infinite 1s;
-} 
+}
 
 .arrow4 {
 	animation: flash 2.5s infinite 1.5s;
@@ -283,10 +303,10 @@ header {
 .arrow5 {
 	animation: flash 2.5s infinite 2s;
 }
-	
+
 section .container {
 	max-width: 1300px;
-   	margin: 0 auto;
+	margin: 0 auto;
 	font-size: 2rem;
 	padding: 40px;
 }
@@ -295,21 +315,21 @@ section .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-}	  
+}
 
 footer {
 	background: #0e0606;
 	height: 100px;
 	margin-bottom: 40px;
 	display: flex;
-	justify-content: space-around; 
+	justify-content: space-around;
 	align-items: center;
 	font-size: 1.3rem;
 	color: #fff;
 	font-weight: 600;
 }
 
-.social-media a { 
+.social-media a {
 	color: #fff;
 	font-size: 2.5rem;
 }
@@ -341,7 +361,7 @@ Extra large ≥1200px (desktop monitors) */
 		font-size: 1.8rem;
 		right: 50px;
 	}
-	
+
 	.headshot {
 		width: 200px;
 		height: 240px;
@@ -351,7 +371,7 @@ Extra large ≥1200px (desktop monitors) */
 	.portfolio-heading {
 		width: 900px;
 	}
-	
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -362,7 +382,7 @@ Extra large ≥1200px (desktop monitors) */
 
 	.name-top  h1 {
 		font-size: 2rem;
-	  }
+	}
 
 	.title {
 		color: #ffffff;
@@ -370,13 +390,13 @@ Extra large ≥1200px (desktop monitors) */
 	}
 
 	.text {
-		font-size: 1.5rem; 
-	 }
+		font-size: 1.5rem;
+	}
 
 	.see-more {
 		padding: 9px 11px;
 		cursor: pointer;
-	 	font-size: 1rem;
+		font-size: 1rem;
 		border-radius: 5px;
 	}
 
@@ -406,7 +426,7 @@ Extra large ≥1200px (desktop monitors) */
 		border-top: 5px solid transparent;
 		border-bottom: 5px solid transparent;
 	}
-	
+
 }
 
 @media only screen and (max-width: 800px)  {
@@ -415,7 +435,7 @@ Extra large ≥1200px (desktop monitors) */
 		top: 230px;
 		position: absolute;
 	}
-	
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -441,7 +461,7 @@ Extra large ≥1200px (desktop monitors) */
 	}
 
 	.content-about-me {
-		display: flex; 
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
@@ -480,10 +500,10 @@ Extra large ≥1200px (desktop monitors) */
 	.col-img {
 		width: 100%;
 	}
-	 
-	 .left-link {
-		 justify-content: flex-end;
-		 margin-right: 80px;
+
+	.left-link {
+		justify-content: flex-end;
+		margin-right: 80px;
 	}
 
 	.media-text p {
@@ -512,7 +532,7 @@ Extra large ≥1200px (desktop monitors) */
 		font-size: 1.2rem;
 	}
 
-	.social-media a { 
+	.social-media a {
 		font-size: 2rem;
 	}
 
