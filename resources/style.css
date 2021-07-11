@@ -24,8 +24,8 @@ body {
 
 .hamburger-button div {
 	display: none;
-	width: 35px;
-	height: 5px;
+	width: 33px;
+	height: 3px;
 	background-color: #000000;
 	margin: 6px 0;
 }
@@ -147,10 +147,6 @@ header {
 	border-radius: 8px;
 }
 
-.about-me-text h2 {
-	color: #202c2d;
-}
-
 .about-me-text {
 	right: 110px;
 	position: relative;
@@ -211,6 +207,7 @@ header {
 	width: 380px;
 	height: 280px;
 	transition: 0.25s;
+	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
 }
 
 .col-img:hover {
@@ -344,6 +341,12 @@ footer {
 	outline: 0.2px solid #453e4c;
 }
 
+.colorTransition {
+	color: #c24444;
+	animation-duration: 2s;
+	transition: 1s;
+}
+
 /* 
 Extra small <576px (small phones)
 Small ≥576px (phones)
@@ -440,19 +443,51 @@ Extra large ≥1200px (desktop monitors) */
 
 @media only screen and (max-width: 750px) {
 
-	.navbar-sticky {
-		display: none;
+	.hamburger-container {
+		background: #fff;
+		display: flex;
+		flex-direction: row-reverse;
+		border-bottom: 1px solid #f1efef;
 	}
 
 	.hamburger-button {
-		background-color: #fff;
-		padding: 10px;
-		border-bottom: 1px solid #a19f9f;
+		cursor: pointer;
+		padding: 15px;
 	}
 
 	.hamburger-button div {
 		display: block;
 		background-color: #6e696a;
+	}
+
+	.navbar-nav {
+		position: absolute;
+		background: #c24444;
+		height: 100vh;
+		width: 100%;
+		text-align: center;
+		justify-content: space-evenly;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -10%);
+		-webkit-clip-path: circle(40px at 90% -10%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+
+	.navbar-nav.open {
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+	}
+
+	.navbar-nav a:hover {
+		color: #020202;
+		outline: none;
+	}
+
+	.navbar-nav a.active {
+		color: #020202;
+		outline: none;
 	}
 
 	.container-about-me {
@@ -494,11 +529,16 @@ Extra large ≥1200px (desktop monitors) */
 
 	.portfolio-flex {
 		display: block;
-		margin: 0;
 	}
 
 	.col-img {
-		width: 100%;
+		width: 220px;
+		margin: auto;
+		transition: none;
+	}
+
+	.col-img:hover {
+		transform: none;
 	}
 
 	.left-link {
@@ -519,11 +559,12 @@ Extra large ≥1200px (desktop monitors) */
 		position: relative;
 		margin-top: -70px;
 		text-align: center;
+		padding: 15px;
 	}
 
 	.portfolio-links {
 		bottom: 0px;
-		padding: 4px;
+		padding: 21px;
 		justify-content: center;
 		right: 0;
 	}
