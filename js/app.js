@@ -25,7 +25,7 @@ const controller = new ScrollMagic.Controller();
  new ScrollMagic.Scene({
     triggerElement:'.title',
     triggerHook: 0.4,
-    // reverse: false
+    reverse: false
 })// .addIndicators({ colorStart: 'white'})
     .setClassToggle('.esteraName', 'colorTransition')
     .addTo(controller);
@@ -49,11 +49,10 @@ new ScrollMagic.Scene({
     .addTo(controller)
 
 
-const hamburger = document.querySelector('.hamburger-button')
 const navLinks = document.querySelector(".navbar-nav");
 const aNavigation = document.querySelectorAll(".navbar-nav a");
 
-hamburger.addEventListener('click', ()=> {
+document.querySelector('.hamburger-button').addEventListener('click', ()=> {
         navLinks.classList.toggle("open");
         aNavigation.forEach(a => {
             a.addEventListener('click', ()=>{
@@ -61,3 +60,12 @@ hamburger.addEventListener('click', ()=> {
             })
         });
 })
+
+
+document.querySelector('.footer-btn').addEventListener('click', ()=> {
+    document.querySelector('.modal').classList.toggle('show-modal')
+})
+
+document.querySelector(".close-button").addEventListener("click", e => {
+    document.querySelector('.modal').classList.toggle("show-modal");
+});

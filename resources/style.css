@@ -301,17 +301,36 @@ header {
 	animation: flash 2.5s infinite 2s;
 }
 
-section .container {
+ .container-email {
 	max-width: 1300px;
 	margin: 0 auto;
 	font-size: 2rem;
-	padding: 40px;
+	padding: 100px ;
 }
 
 .email {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	text-align: center;
+	font-size: 28px;
+	padding: 100px;
+}
+
+.email p {
+	padding-bottom: 50px;
+}
+
+.footer-btn {
+	cursor: pointer;
+	width: 220px;
+	margin: 20px 0 0;
+	font-size: 18px;
+	letter-spacing: 1.54px;
+	text-transform: uppercase;
+	border-radius: 25px;
+	padding: 20px;
+	background-color: #ef4b6c;
+	border: 0;
+	color: #ffffff;
+	box-shadow: 0 20px 70px 0 rgb(55 5 118 / 40%);;
 }
 
 footer {
@@ -345,6 +364,66 @@ footer {
 	color: #c24444;
 	animation-duration: 2s;
 	transition: 1s;
+}
+
+.modal {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	z-index: 300;
+}
+
+.modal-content {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 45%;
+	height: 70%;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.show-modal {
+	display: block;
+}
+
+.close-button {
+	right: 10px;
+	position: absolute;
+	width: 24px;
+	cursor: pointer;
+	font-size: 3rem;
+	transition: 0.25s;
+}
+
+.close-button:hover {
+	transform: scale(1.5);
+}
+
+.talkTitle {
+	font-size: 3.5rem;
+	padding: 35px 20px 0 20px;
+	text-align: center;
+}
+
+.modalText {
+	font-size: 2rem;
+	padding-top: 30px;
+	text-align: center;
+	color: #757c98;
+}
+
+.modal-email {
+	font-size: 2rem;
+	padding-top: 50px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px;
 }
 
 /* 
@@ -468,8 +547,8 @@ Extra large ≥1200px (desktop monitors) */
 		text-align: center;
 		justify-content: space-evenly;
 		flex-direction: column;
-		clip-path: circle(100px at 90% -10%);
-		-webkit-clip-path: circle(40px at 90% -10%);
+		clip-path: circle(26px at 90% -10%);
+		-webkit-clip-path: circle(26px at 90% -10%);
 		transition: all 1s ease-out;
 		pointer-events: none;
 	}
@@ -579,6 +658,18 @@ Extra large ≥1200px (desktop monitors) */
 
 	.icon {
 		margin-right: 4px;
+	}
+
+}
+
+@media only screen and (max-width: 610px)  {
+
+	.contactTitle {
+		padding-bottom: 80px;
+	}
+
+	.email {
+		padding: 0;
 	}
 
 }
