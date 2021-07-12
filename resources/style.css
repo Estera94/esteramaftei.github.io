@@ -569,6 +569,10 @@ Extra large ≥1200px (desktop monitors) */
 		outline: none;
 	}
 
+	.navbar-nav a {
+		font-size: 2.5rem;
+	}
+
 	.container-about-me {
 		margin-top: 90px;
 		width: 80%;
@@ -646,6 +650,18 @@ Extra large ≥1200px (desktop monitors) */
 		padding: 21px;
 		justify-content: center;
 		right: 0;
+	}
+
+	.git {
+		font-size: 2.5rem;
+	}
+
+	.git span {
+		font-size: 2rem;
+	}
+
+	.git:hover {
+		color: #000000;
 	}
 
 	footer {
