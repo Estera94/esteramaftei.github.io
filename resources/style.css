@@ -721,11 +721,34 @@ Extra large ≥1200px (desktop monitors) */
 
 }
 
-@media only screen and (max-width: 430px)  {
+@media only screen and (max-width: 474px)  {
+
+	.wave-bottom {
+		top: 585px;
+		position: absolute;
+	}
+
+}
+
+@media only screen and (max-width: 450px)  {
 
 	.wave-top  {
 		top: 280px;
 		position: absolute;
 	}
 
+	.wave-bottom {
+		top: 602px;
+		position: absolute;
+	}
+
+	.git {
+		 font-size: 2rem;
+	}
+
+	.modal-content {
+		width: 350px;
+		height: 525px;
+	}
 }
+
