@@ -459,6 +459,9 @@ Extra large ≥1200px (desktop monitors) */
 		width: 900px;
 	}
 
+	.modal-content {
+		height: 100%;
+	}
 }
 
 @media only screen and (max-width: 992px) {
