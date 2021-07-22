@@ -437,6 +437,12 @@ Medium ≥768px (tablets)
 Large ≥992px (laptops)
 Extra large ≥1200px (desktop monitors) */
 
+@media only screen and (max-width: 1450px)  {
+	.modal-content {
+		height: 650px;
+	}
+}
+
 @media only screen and (max-width: 1250px)  {
 
 	.container-about-me {
@@ -459,9 +465,6 @@ Extra large ≥1200px (desktop monitors) */
 		width: 900px;
 	}
 
-	.modal-content {
-		height: 100%;
-	}
 }
 
 @media only screen and (max-width: 992px) {
