@@ -148,7 +148,7 @@ header {
 }
 
 .about-me-text {
-	right: 110px;
+	right: 100px;
 	position: relative;
 	width: 40%;
 	font-size: 2rem;
@@ -208,6 +208,10 @@ header {
 	height: 280px;
 	transition: 0.25s;
 	box-shadow: 13px 9px 15px -1px rgba(63, 62, 62, 0.32);
+}
+
+.fetch-img {
+	border-radius: 8px;
 }
 
 .col-img:hover {
@@ -445,6 +449,7 @@ Extra large ≥1200px (desktop monitors) */
 	}
 
 	.headshot {
+		margin-top: 80px;
 		width: 200px;
 		height: 240px;
 	}
@@ -589,8 +594,8 @@ Extra large ≥1200px (desktop monitors) */
 
 	.about-me-text {
 		right: 0;
-		width: 95%;
-		font-size: 1.6rem;
+		width: 80%;
+		font-size: 2rem;
 	}
 
 	.headshot {
