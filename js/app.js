@@ -29,6 +29,16 @@ new ScrollMagic.Scene({
 })  .setClassToggle('.contactTitle', 'colorTransition')
     .addTo(controller)
 
+const swiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 window.addEventListener('scroll', ()=>{
     let current = '';
     sections.forEach(section =>{
@@ -62,3 +72,4 @@ document.querySelector('.footer-btn').addEventListener('click', ()=> {
 document.querySelector(".close-button").addEventListener("click", e => {
     document.querySelector('.modal').classList.toggle("show-modal");
 });
+

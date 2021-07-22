@@ -11,6 +11,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
 .name-top {
 	display: flex;
 	justify-content: center;

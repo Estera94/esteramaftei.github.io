@@ -1,178 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="resources/normalize.css">
-	<link rel="stylesheet" type="text/css" href="resources/style.css">
-	<!-- FONT -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<!-- PAGE TITLE -->
-	<link rel="icon" href="resources/pictures/relax.jpg">
-	<title>Portfolio</title>
-	<!-- JS SCRIPT -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.4/plugins/debug.addIndicators.js" integrity="sha512-siPei08Og2bnghygA9ZnFKlMV51M4pY9aAqTV3J3orFG3gEBlMFBCSq8dEaijFznAUPj3v926RRhi+PashYJvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.4/plugins/animation.gsap.min.js" integrity="sha512-OtNHj0yxiMypxtFF0c2aj/xYlt0rUCj1hP9alWowINpVRm5IG6XTghp3ZMk0gDHujxcmoUmRwL8DOjZnRS/tVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script defer src="js/app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="resources/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- FONT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- PAGE TITLE -->
+    <link rel="icon" href="resources/pictures/relax.jpg">
+    <title>Portfolio</title>
+    <!-- JS SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+            integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.4/plugins/debug.addIndicators.js"
+            integrity="sha512-siPei08Og2bnghygA9ZnFKlMV51M4pY9aAqTV3J3orFG3gEBlMFBCSq8dEaijFznAUPj3v926RRhi+PashYJvw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.4/plugins/animation.gsap.min.js"
+            integrity="sha512-OtNHj0yxiMypxtFF0c2aj/xYlt0rUCj1hP9alWowINpVRm5IG6XTghp3ZMk0gDHujxcmoUmRwL8DOjZnRS/tVQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/app.js"></script>
 </head>
 <body>
 <section id="home">
-	<div class="name-top">
-		<h1>Estera Maftei</h1>
-	</div>
+    <div class="name-top">
+        <h1>Estera Maftei</h1>
+    </div>
 </section>
 <header>
-	<div class="hamburger-container">
-		<div class="hamburger-button">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-	</div>
-	<nav class="navbar-sticky navbar-nav">
-		<a href="#" class="home">HOME</a>
-		<a href="#about-me" class="about-me">ABOUT</a>
-		<a href="#portfolio" class="portfolio">PORTFOLIO</a>
-		<a href="#contact" class="contact">CONTACT</a>
-	</nav>
+    <div class="hamburger-container">
+        <div class="hamburger-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <nav class="navbar-sticky navbar-nav">
+        <a href="#" class="home">HOME</a>
+        <a href="#about-me" class="about-me">ABOUT</a>
+        <a href="#portfolio" class="portfolio">PORTFOLIO</a>
+        <a href="#contact" class="contact">CONTACT</a>
+    </nav>
 </header>
 <section>
-	<div>
-		<img class="wave-top" src="resources/pictures/waveTop.svg">
-	</div>
-	<div class="container-content">
-		<video class="moon-video" autoplay loop muted >
-			<source src="./resources/pictures/cool.mp4" type="video/mp4">
-		</video>
-		<div class="content">
-			<p class="title">Welcome to <span class="esteraName">Estera's</span> portfolio</p>
-			<p class="text">I believe in creative freedom and the power of good code!</p>
-			<div class="button">
-				<a class="see-more" href="./resources/cv.pdf" download="estera-cv">DOWNLOAD CV</a>
-			</div>
-		</div>
-	</div>
-	<div>
-		<img class="wave-bottom" src="resources/pictures/waveBottom.svg">
-	</div>
+    <div>
+        <img class="wave-top" src="resources/pictures/waveTop.svg">
+    </div>
+    <div class="container-content">
+        <video class="moon-video" autoplay loop muted>
+            <source src="./resources/pictures/cool.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <p class="title">Welcome to <span class="esteraName">Estera's</span> portfolio</p>
+            <p class="text">I believe in creative freedom and the power of good code!</p>
+            <div class="button">
+                <a class="see-more" href="./resources/cv.pdf" download="estera-cv">DOWNLOAD CV</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img class="wave-bottom" src="resources/pictures/waveBottom.svg">
+    </div>
 </section>
 <main>
-	<section id="about-me">
-		<div class="container-about-me" >
-			<div class="content-about-me">
-				<div class="about-me-text">
-					<h2 class="aboutTitle">About</h2>
-					<p>I grew up in Romania, at 15 I went to a technological high school until I was 19.
-						Since moving to the UK I realised I wanted to become a programmer and now I spent all of my free time learning software development.
-						Programming wasn't considered 'the done thing' for women in Romania - so I travelled to England and pursued it anyway! I invested in self-study, and enrolled in iO Academy.
-					</p>
-				</div>
-				<div class="headshot">
-					<img src="./resources/pictures/my-picture.jpeg" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="portfolio">
-		<div class="portfolio-heading">
-			<h2 class="portfolioTitle">Portfolio</h2>
-		</div>
-		<div class="container-portfolio">
-			<div class="portfolio-flex">
-				<div class="col-img fetch-img">
-					<a href="https://2021-esteram.dev.io-academy.uk/fetch-data/"><img src="./resources/pictures/fetch.jpeg" alt="multiple colored pictures"></a>
-				</div>
-				<div class="arrow-holder">
-					<div class="arrow5 arrow arrow-left"></div>
-					<div class="arrow4 arrow arrow-left"></div>
-					<div class="arrow3 arrow arrow-left"></div>
-				</div>
-				<div class="col-text">
-					<p>Project description goes here with detail about the project and tech i used</p>
-				</div>
-			</div>
-			<div class="portfolio-links">
-				<a class="git" href="https://github.com/EsteraMaftei"><span>Github</span><i class="fa fa-github" aria-hidden="true"></i></a>
-				<a class="git" href="https://2021-esteram.dev.io-academy.uk/fetch-data/"><span>Live</span><i class="fa fa-external-link" aria-hidden="true"></i></a>
-			</div>
-		</div>
-		<div class="container-portfolio">
-			<div class="portfolio-flex">
-				<div class="col-text media-text">
-					<p>Project description goes here with detail about the project and tech i used</p>
-				</div>
-				<div class="arrow-holder">
-					<div class="arrow1 arrow arrow-right"></div>
-					<div class="arrow2 arrow arrow-right"></div>
-					<div class="arrow3 arrow arrow-right"></div>
-				</div>
-				<div class="col-img">
-					<a href="https://2021-esteram.dev.io-academy.uk/IP-tracker/"><img src="./resources/pictures/ipTracker.jpeg" alt="ip tracker map"></a>
-				</div>
-			</div>
-			<div class="portfolio-links left-link">
-				<a class="git" href="https://github.com/EsteraMaftei"><span>Github</span><i class="fa fa-github" aria-hidden="true"></i></a>
-				<a class="git" href="https://2021-esteram.dev.io-academy.uk/IP-tracker/"><span>Live</span><i class="fa fa-external-link" aria-hidden="true"></i></a>
-			</div>
-		</div>
-		<div class="container-portfolio">
-			<div class="portfolio-flex">
-				<div class="col-img">
-					<a href="https://2021-esteram.dev.io-academy.uk/planetsApi/"><img src="./resources/pictures/planetsApi.png" alt="planets rotate around the sun"></a>
-				</div>
-				<div class="arrow-holder">
-					<div class="arrow5 arrow arrow-left"></div>
-					<div class="arrow4 arrow arrow-left"></div>
-					<div class="arrow3 arrow arrow-left"></div>
-				</div>
-				<div class="col-text">
-					<p>Project description goes here with detail about the project and tech i used</p>
-				</div>
-			</div>
-			<div class="portfolio-links">
-				<a class="git" href="https://github.com/EsteraMaftei"><span>Github</span><i class="fa fa-github" aria-hidden="true"></i></a>
-				<a class="git" href="https://2021-esteram.dev.io-academy.uk/planetsApi/"><span>Live</span><i class="fa fa-external-link" aria-hidden="true"></i></a>
-			</div>
-		</div>
-	</section>
-	<section id="contact">
-		<div class="container-email">
-			<h2 class="contactTitle">Contact</h2>
-			<div class="email">
-				<p>Interested in working with me?</p>
-				<button class="footer-btn">Let's talk!</button>
-			</div>
-		</div>
-	</section>
-	<div class="modal">
-		<div class="modal-content">
-			<span class="close-button">×</span>
-			<div class="modal-circle">
-				<img src="resources/pictures/circles.svg">
-			</div>
-			<div class="inner-modal-text">
-				<p class="talkTitle">Let's talk!</p>
-				<p class="modalText">By sending an email at: </p>
-				<p class="modal-email">estera.maftei94@gmail.com</p>
-			</div>
-		</div>
-	</div>
+    <section id="about-me">
+        <div class="container-about-me">
+            <div class="content-about-me">
+                <div class="about-me-text">
+                    <h2 class="aboutTitle">About</h2>
+                    <p>I grew up in Romania, at 15 I went to a technological high school until I was 19.
+                        Since moving to the UK I realised I wanted to become a programmer and now I spent all of my free
+                        time learning software development.
+                        Programming wasn't considered 'the done thing' for women in Romania - so I travelled to England
+                        and pursued it anyway! I invested in self-study, and enrolled in iO Academy.
+                    </p>
+                </div>
+                <div class="headshot">
+                    <img src="./resources/pictures/my-picture.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="portfolio-heading">
+                        <h2 class="portfolioTitle">Portfolio</h2>
+                    </div>
+                    <div class="container-portfolio">
+                        <div class="portfolio-flex">
+                            <div class="col-img fetch-img">
+                                <a href="https://2021-esteram.dev.io-academy.uk/fetch-data/">
+                                    <img src="./resources/pictures/fetch.jpeg" alt="multiple colored pictures">
+                                </a>
+                            </div>
+                            <div class="arrow-holder">
+                                <div class="arrow5 arrow arrow-left"></div>
+                                <div class="arrow4 arrow arrow-left"></div>
+                                <div class="arrow3 arrow arrow-left"></div>
+                            </div>
+                            <div class="col-text">
+                                <p>Project description goes here with detail about the project and tech i used</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-links">
+                            <a class="git" href="https://github.com/EsteraMaftei"><span>Github</span>
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a class="git" href="https://2021-esteram.dev.io-academy.uk/fetch-data/"><span>Live</span>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-portfolio">
+                        <div class="portfolio-flex">
+                            <div class="col-text media-text">
+                                <p>Project description goes here with detail about the project and tech i used</p>
+                            </div>
+                            <div class="arrow-holder">
+                                <div class="arrow1 arrow arrow-right"></div>
+                                <div class="arrow2 arrow arrow-right"></div>
+                                <div class="arrow3 arrow arrow-right"></div>
+                            </div>
+                            <div class="col-img">
+                                <a href="https://2021-esteram.dev.io-academy.uk/IP-tracker/">
+                                    <img src="./resources/pictures/ipTracker.jpeg" alt="ip tracker map">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-links left-link">
+                            <a class="git" href="https://github.com/EsteraMaftei"><span>Github</span>
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a class="git" href="https://2021-esteram.dev.io-academy.uk/IP-tracker/"><span>Live</span>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-portfolio">
+                        <div class="portfolio-flex">
+                            <div class="col-img">
+                                <a href="https://2021-esteram.dev.io-academy.uk/planetsApi/">
+                                    <img src="./resources/pictures/planetsApi.png" alt="planets rotate around the sun">
+                                </a>
+                            </div>
+                            <div class="arrow-holder">
+                                <div class="arrow5 arrow arrow-left"></div>
+                                <div class="arrow4 arrow arrow-left"></div>
+                                <div class="arrow3 arrow arrow-left"></div>
+                            </div>
+                            <div class="col-text">
+                                <p>Project description goes here with detail about the project and tech i used</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-links">
+                            <a class="git" href="https://github.com/EsteraMaftei"><span>Github</span>
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a class="git" href="https://2021-esteram.dev.io-academy.uk/planetsApi/"><span>Live</span>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="portfolio-heading">
+                        <h2 class="portfolioTitle">Portfolio</h2>
+                    </div>
+                    <div class="container-portfolio">
+                        <div class="portfolio-flex">
+                            <div class="col-img fetch-img">
+                                <a href="https://2021-esteram.dev.io-academy.uk/fetch-data/">
+                                    <img src="./resources/pictures/fetch.jpeg" alt="multiple colored pictures">
+                                </a>
+                            </div>
+                            <div class="arrow-holder">
+                                <div class="arrow5 arrow arrow-left"></div>
+                                <div class="arrow4 arrow arrow-left"></div>
+                                <div class="arrow3 arrow arrow-left"></div>
+                            </div>
+                            <div class="col-text">
+                                <p>Project description goes here with detail about the project and tech i used</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-links">
+                            <a class="git" href="https://github.com/EsteraMaftei"><span>Github</span>
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a class="git" href="https://2021-esteram.dev.io-academy.uk/fetch-data/"><span>Live</span>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-portfolio">
+                        <div class="portfolio-flex">
+                            <div class="col-text media-text">
+                                <p>Project description goes here with detail about the project and tech i used</p>
+                            </div>
+                            <div class="arrow-holder">
+                                <div class="arrow1 arrow arrow-right"></div>
+                                <div class="arrow2 arrow arrow-right"></div>
+                                <div class="arrow3 arrow arrow-right"></div>
+                            </div>
+                            <div class="col-img">
+                                <a href="https://2021-esteram.dev.io-academy.uk/IP-tracker/">
+                                    <img src="./resources/pictures/ipTracker.jpeg" alt="ip tracker map">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-links left-link">
+                            <a class="git" href="https://github.com/EsteraMaftei"><span>Github</span>
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a class="git" href="https://2021-esteram.dev.io-academy.uk/IP-tracker/"><span>Live</span>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-portfolio">
+                        <div class="portfolio-flex">
+                            <div class="col-img">
+                                <a href="https://2021-esteram.dev.io-academy.uk/planetsApi/">
+                                    <img src="./resources/pictures/planetsApi.png" alt="planets rotate around the sun">
+                                </a>
+                            </div>
+                            <div class="arrow-holder">
+                                <div class="arrow5 arrow arrow-left"></div>
+                                <div class="arrow4 arrow arrow-left"></div>
+                                <div class="arrow3 arrow arrow-left"></div>
+                            </div>
+                            <div class="col-text">
+                                <p>Project description goes here with detail about the project and tech i used</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-links">
+                            <a class="git" href="https://github.com/EsteraMaftei"><span>Github</span>
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a class="git" href="https://2021-esteram.dev.io-academy.uk/planetsApi/"><span>Live</span>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container-email">
+            <h2 class="contactTitle">Contact</h2>
+            <div class="email">
+                <p>Interested in working with me?</p>
+                <button class="footer-btn">Let's talk!</button>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <div class="modal-circle">
+                <img src="resources/pictures/circles.svg">
+            </div>
+            <div class="inner-modal-text">
+                <p class="talkTitle">Let's talk!</p>
+                <p class="modalText">By sending an email at: </p>
+                <p class="modal-email">estera.maftei94@gmail.com</p>
+            </div>
+        </div>
+    </div>
 </main>
 <footer>
-	<div class="copywriting">
-		<i class="fa fa-copyright" aria-hidden="true"></i>2021 by Estera. All rights reserved.
-	</div>
-	<div class="social-media">
-		<a class="icon" href="https://github.com/EsteraMaftei"><i class="fa fa-github" aria-hidden="true"></i></a>
-		<a class="icon" href="https://www.linkedin.com/feed/"><i class=" fa fa-linkedin" aria-hidden="true"></i></a>
-	</div>
+    <div class="copywriting">
+        <i class="fa fa-copyright" aria-hidden="true"></i>2021 by Estera. All rights reserved.
+    </div>
+    <div class="social-media">
+        <a class="icon" href="https://github.com/EsteraMaftei"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="icon" href="https://www.linkedin.com/feed/"><i class=" fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
 </footer>
 </body>
 </html>
