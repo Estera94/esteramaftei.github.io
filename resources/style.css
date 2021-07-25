@@ -79,7 +79,6 @@ header {
 
 .moon-video {
 	width: 50%;
-	height: 100%;
 }
 
 .wave-top {
@@ -603,6 +602,11 @@ Extra large ≥1200px (desktop monitors) */
 		font-size: 2rem;
 	}
 
+	.about-me-text p {
+		letter-spacing: 0;
+	}
+
+
 	.headshot {
 		width: 150px;
 		height: 160px;
@@ -689,6 +693,7 @@ Extra large ≥1200px (desktop monitors) */
 }
 
 @media only screen and (max-height: 700px)  {
+
 	.modal-content {
 		height: 600px;
 	}
@@ -699,6 +704,7 @@ Extra large ≥1200px (desktop monitors) */
 }
 
 @media only screen and (max-height: 600px)  {
+
 	.modal-content {
 		height: 500px;
 		width: 400px;
@@ -731,6 +737,10 @@ Extra large ≥1200px (desktop monitors) */
 }
 
 @media only screen and (max-width: 450px)  {
+
+	.about-me-text p {
+		text-align: start;
+	}
 
 	.wave-top  {
 		top: 280px;
