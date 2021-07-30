@@ -56,6 +56,20 @@ window.addEventListener('scroll', ()=>{
     })
 })
 
+function scrollTextApear(){
+    let textEffect = document.querySelectorAll('.text-effect');
+    textEffect.forEach(text => {
+        let textPosition = text.getBoundingClientRect().top
+        let screenPosition = window.innerHeight / 1.5 ;
+        if(textPosition < screenPosition)
+        {
+            text.classList.add('text-apear')
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollTextApear)
+
 document.querySelector('.hamburger-button').addEventListener('click', ()=> {
         navLinks.classList.toggle("open");
         aNavigation.forEach(a => {
@@ -72,4 +86,3 @@ document.querySelector('.footer-btn').addEventListener('click', ()=> {
 document.querySelector(".close-button").addEventListener("click", e => {
     document.querySelector('.modal').classList.toggle("show-modal");
 });
-
