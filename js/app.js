@@ -29,7 +29,7 @@ new ScrollMagic.Scene({
 })  .setClassToggle('.contactTitle', 'colorTransition')
     .addTo(controller)
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',
     },
