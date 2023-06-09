@@ -1,4 +1,3 @@
 # portfolio
 Live version:
-
-https://esteramaftei.github.io/
+https://estera94.github.io/esteramaftei.github.io/
